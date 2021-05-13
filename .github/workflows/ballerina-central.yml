@@ -13,5 +13,5 @@
 
       - name: Run Script
         working-directory: ./test-scripts/ballerina-central/
-        run: ls
+        run: docker build .
 

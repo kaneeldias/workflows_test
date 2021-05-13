@@ -12,5 +12,5 @@
         uses: docker/setup-buildx-action@v1
 
       - name: Run Script
-        run: echo "lol"
+        run: ls
 

@@ -1,0 +1,13 @@
+  on: push
+
+  jobs:
+    docker:
+      runs-on: ubuntu-latest
+      steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Install Docker
+        id: buildx
+        uses: docker/setup-buildx-action@v1
+

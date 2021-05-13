@@ -12,6 +12,6 @@
       #  uses: docker/setup-buildx-action@v1
 
       - name: Run Script
-        working-directory: ./test-scripts
+        working-directory: ./test-scripts/ballerina-central/
         run: ls
 

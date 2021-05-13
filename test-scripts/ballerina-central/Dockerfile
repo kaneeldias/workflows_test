@@ -43,7 +43,8 @@ COPY --from=alpha3-pack /ballerina/runtime /ballerina/alpha3
 COPY --from=alpha4-pack /ballerina/runtime /ballerina/alpha4
 COPY --from=alpha5-pack /ballerina/runtime /ballerina/alpha5
 
-ARG BALLERINA_CENTRAL_ACCESS_TOKEN="a8764443-1782-3736-b79b-5fb7c01d3ee8"
+#ARG BALLERINA_CENTRAL_ACCESS_TOKEN="a8764443-1782-3736-b79b-5fb7c01d3ee8"
+ARG BALLERINA_CENTRAL_ACCESS_TOKEN=""
 ARG TEST_ORGANIZATION="bc2testorg"
 
 ENV BALLERINA_CENTRAL_ACCESS_TOKEN=$BALLERINA_CENTRAL_ACCESS_TOKEN

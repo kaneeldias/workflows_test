@@ -13,8 +13,8 @@
 
       - name: Run Script
         working-directory: ./test-scripts/ballerina-central/
-        env:
-          BALLERINA_CENTRAL_ACCESS_TOKEN: ${{ secrets.BALLERINA_BOT_USERNAME }}
-          TEST_ORGANIZATION: ${{ secrets.BALLERINA_BOT_TOKEN }}
-        run: docker build --build-arg BALLERINA_CENTRAL_ACCESS_TOKEN="a8764443-1782-3736-b79b-5fb7c01d3ee8" .
+        #env:
+        #  BALLERINA_CENTRAL_ACCESS_TOKEN: ${{ secrets.BALLERINA_BOT_USERNAME }}
+        #  TEST_ORGANIZATION: ${{ secrets.BALLERINA_BOT_TOKEN }}
+        run: docker build --build-arg BALLERINA_CENTRAL_ACCESS_TOKEN=${{ secrets.BALLERINA_CENTRAL_ACCESS_TOKEN }} .
 
